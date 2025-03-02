@@ -7,20 +7,21 @@
 header a {
    display: block;
    text-align: center;
-   margin: 2rem auto;
+   margin: 2rem auto auto;
 }
 
 .hero-section {
-   display: flex;
-   padding: 30px 0;
-   gap: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   height: 480px;
    overflow-x: hidden;
 }
 .left-images-wrap {
-   margin-left: -35px;
+   margin: 4em auto auto -30px;
 }
 .right-images-wrap {
-   margin-right: -35px;
+   margin: auto -30px 4em auto;
 }
 .txt {
    display: flex;
@@ -32,11 +33,12 @@ header a {
 }
 h1 {
    width: 13ch;
+   font-weight: 900;
    font-size: 3rem;
 }
 .para {
-   color: hsl(224, 10%, 45%);
-   font-size: 19.5px;
+   color: hsl(240, 10%, 57%);
+   font-weight: 400;
 }
 .download-and-what-wrap a {
    display: inline-block;
@@ -45,13 +47,20 @@ h1 {
    margin: 20px 10px;
    text-decoration: none;
    border-radius: 25px;
+   font-weight: 200;
 }
 .download {
-   background-color: hsl(180, 50%, 45%);
+   background-color: #4d96a9;
 }
 .download span {
-   color: hsl(180, 60%, 60%);
+   color: #8fe3f9;
+}
+.download:hover {
+   background-color: #71c0da;
 }
 .what {
-   background-color: hsl(277, 45%, 45%);
+   background-color: #855fb1;
+}
+.what:hover {
+   background-color: #b18bdd;
 }
