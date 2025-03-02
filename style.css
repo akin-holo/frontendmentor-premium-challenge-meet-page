@@ -1,0 +1,57 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+header a {
+   display: block;
+   text-align: center;
+   margin: 2rem auto;
+}
+
+.hero-section {
+   display: flex;
+   padding: 30px 0;
+   gap: 20px;
+   overflow-x: hidden;
+}
+.left-images-wrap {
+   margin-left: -35px;
+}
+.right-images-wrap {
+   margin-right: -35px;
+}
+.txt {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;   
+   text-align: center;
+   gap: 20px;
+}
+h1 {
+   width: 13ch;
+   font-size: 3rem;
+}
+.para {
+   color: hsl(224, 10%, 45%);
+   font-size: 19.5px;
+}
+.download-and-what-wrap a {
+   display: inline-block;
+   color: #fff;
+   padding: 15px;
+   margin: 20px 10px;
+   text-decoration: none;
+   border-radius: 25px;
+}
+.download {
+   background-color: hsl(180, 50%, 45%);
+}
+.download span {
+   color: hsl(180, 60%, 60%);
+}
+.what {
+   background-color: hsl(277, 45%, 45%);
+}
