@@ -206,7 +206,7 @@ footer .number {
    }
 
    .content-image {
-      width: 160px;
+      width: 150px;
    }
    .content-text-wrap {
       width: 100%;
@@ -220,6 +220,9 @@ footer .number {
  
    .footer-content-wrapper {
       background-image: url("assets/tablet/image-footer.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
    }
 
    .content-wrap {
