@@ -17,6 +17,10 @@ header a {
    height: 450px;
    overflow-x: hidden;
 }
+
+.tablet-image/* tablet image removed from large screen */ {
+   display: none;
+}
 .left-images-wrap {
    margin: 1.5em auto auto -30px;
 }
@@ -146,19 +150,114 @@ footer .number {
    height: 100%;
    background-color: #4d97a986; 
 }
-.footer-content-wrapper a {
+.content-wrap a {
    color: #fff;
    text-decoration: none;
    padding: 15px;
    background-color: #855fb1;
    border-radius: 25px;
 }
-.footer-content-wrapper a span {
+.content-wrap a span {
    color: #d9b8ff;
 }
-.footer-content-wrapper a:hover {
+.content-wrap a:hover {
    background-color: #b18bdd;
 }
-.footer-content-wrapper p {
+.content-wrap p {
    font-weight: 400;
+}
+
+
+/* beakpoints */
+@media screen and (max-width: 1024px) {
+   body {
+      width: 100%;
+   }
+
+   header a {
+      margin: 4rem auto;
+   }
+
+   .hero-section {
+      grid-template-columns: 1fr;
+      height: auto;
+   }
+
+   .left-images-wrap,
+   .right-images-wrap {
+      display: none;
+   }
+
+   .tablet-image {
+      display: block;
+      width: 200px;
+   }
+
+   .txt {
+      margin: 2rem auto;
+   } 
+   .para {
+      width: 50ch;
+      font-size: 23px;
+   }
+
+   .download-and-what-wrap a {
+      padding: 20px;
+   }
+
+   .content-image {
+      width: 160px;
+   }
+   .content-text-wrap {
+      width: 100%;
+   }
+   
+   .send-messages {
+      width: 65ch;
+      font-size: 23px;
+   }
+
+ 
+   .footer-content-wrapper {
+      background-image: url("assets/tablet/image-footer.jpg");
+   }
+
+   .content-wrap {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem;
+   }
+
+   .content-wrap h1 {
+      width: 20ch;
+   }
+
+   .content-wrap p {
+      width: 55ch;
+      font-size: 23px;
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 359px) {
+   /* body {
+      width: 100%;
+   } */
+  
+
+   .hero-section {
+      grid-template-columns: 1fr;
+   }
+
+   .footer-content-wrapper {
+      background-image: url("assets/mobile-image/image-footer.jpg");
+   }
+
+   
+
 }
