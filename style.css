@@ -41,9 +41,14 @@ h1 {
    font-size: 3rem;
 }
 .para {
+   display: flex;
    color: hsl(240, 10%, 57%);
    font-weight: 400;
 }
+/* .para::before, .para::after {
+   flex: 2;
+   content: '';
+} */
 .download-and-what-wrap a {
    display: inline-block;
    color: #fff;
@@ -190,7 +195,7 @@ footer .number {
 
    .tablet-image {
       display: block;
-      width: 200px;
+      width: 100vw !important;
    }
 
    .txt {
@@ -206,7 +211,7 @@ footer .number {
    }
 
    .content-image {
-      width: 150px;
+      width: 120px;
    }
    .content-text-wrap {
       width: 100%;
@@ -245,22 +250,66 @@ footer .number {
 
 @media screen and (max-width: 768px) {
 
+   .tablet-image  img {
+      width: 100vw;
+   }
 }
 
 @media screen and (max-width: 359px) {
-   /* body {
+   body {
       width: 100%;
-   } */
-  
+   }
+   header a {
+      margin: 2rem auto;
+   }
 
    .hero-section {
       grid-template-columns: 1fr;
+      height: auto;
+      overflow: unset;
+   }
+   .para::before, .para::after {
+   flex: 1;
+   text-align: center;
+   content: '';
+   margin: auto 7px;
+   }
+
+
+   .txt h1,
+   .txt .para {
+      width: 100%;
+   }
+   .download-and-what-wrap a {
+      display: block;
+   }
+
+   .content-text-wrap {
+      width: 100%;
+   }
+   .content-image-wrap {
+      grid-template-columns: 1fr 1fr;
+   }
+   .smart-meeting,
+   .send-messages {
+      width: 100%;
    }
 
    .footer-content-wrapper {
       background-image: url("assets/mobile-image/image-footer.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
    }
-
-   
-
+   .content-wrap h1 {
+      margin: auto 10px;
+      font-size: 2.2rem;
+   }
+   .content-wrap p {
+      width: 100%;
+      margin: auto 10px;
+   }
+   .content-wrap a {
+      margin-bottom: 20px;
+   }
 }
