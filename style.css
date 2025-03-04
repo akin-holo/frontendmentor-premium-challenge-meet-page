@@ -268,10 +268,10 @@ footer .number {
       width: 12ch;
    }
    .txt .para {
-      width: 95% !important;
+      width: 95%;
       font-size: 19px;
       margin: auto 5px;
-      font-size: 18px !important;
+      font-size: 18px;
    } 
    .download-and-what-wrap a {
       display: block;
@@ -288,6 +288,7 @@ footer .number {
    }
    .smart-meeting {
       width: 98%;
+      font-size: 2.5rem;
    }
    .send-messages {
       width: 100%;
