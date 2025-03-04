@@ -220,7 +220,7 @@ footer .number {
       margin-bottom: 20px;
    }
    .send-messages {
-      width: 95% !important;
+      width: 95%;
       font-size: 23px;
    }
 
@@ -235,7 +235,7 @@ footer .number {
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      gap: 2rem;
+      gap: 1.5rem;
    }
 
    .content-wrap h1 {
@@ -277,6 +277,9 @@ footer .number {
       display: block;
    }
 
+   .content-wrap {
+      gap: 20px;
+   }
    .content-image {
       width: 150px;
    }
@@ -295,12 +298,6 @@ footer .number {
       font-size: 18px;
    }
 
-   /* .footer-content-wrapper {
-      padding: 20px auto;
-   } */
-   footer .number  {
-      top: 10%;
-   }
    .content-wrap h1 {
       margin: auto 10px;
       font-size: 2.2rem;
