@@ -243,7 +243,7 @@ footer .number {
    }
 
    .content-wrap p {
-      width: 85% !important;
+      width: 85%;
       font-size: 23px;
    }
 
@@ -295,6 +295,12 @@ footer .number {
       font-size: 18px;
    }
 
+   /* .footer-content-wrapper {
+      padding: 20px auto;
+   } */
+   footer .number  {
+      top: 10%;
+   }
    .content-wrap h1 {
       margin: auto 10px;
       font-size: 2.2rem;
