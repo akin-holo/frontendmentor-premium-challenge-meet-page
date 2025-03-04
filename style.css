@@ -195,15 +195,15 @@ footer .number {
 
    .tablet-image {
       display: block;
-      width: 100vw !important;
+      width: 100vw;
    }
 
    .txt {
       margin: 2rem auto;
    } 
    .para {
-      width: 50ch;
-      font-size: 23px;
+      width: 70%;
+      font-size: 24px;
    }
 
    .download-and-what-wrap a {
@@ -211,18 +211,19 @@ footer .number {
    }
 
    .content-image {
-      width: 120px;
+      width: 160px;
    }
    .content-text-wrap {
       width: 100%;
    }
-   
+   .built-for {
+      margin-bottom: 20px;
+   }
    .send-messages {
-      width: 65ch;
+      width: 95% !important;
       font-size: 23px;
    }
 
- 
    .footer-content-wrapper {
       background-image: url("assets/tablet/image-footer.jpg");
       background-repeat: no-repeat;
@@ -242,25 +243,19 @@ footer .number {
    }
 
    .content-wrap p {
-      width: 55ch;
+      width: 85% !important;
       font-size: 23px;
    }
 
 }
 
-@media screen and (max-width: 768px) {
-
-   .tablet-image  img {
-      width: 100vw;
-   }
-}
-
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 767px) {
    body {
       width: 100%;
    }
-   header a {
-      margin: 2rem auto;
+
+   .tablet-image  img {
+      width: 100%;
    }
 
    .hero-section {
@@ -268,31 +263,60 @@ footer .number {
       height: auto;
       overflow: unset;
    }
-   .para::before, .para::after {
-   flex: 1;
-   text-align: center;
-   content: '';
-   margin: auto 7px;
+
+   .txt h1 {
+      width: 12ch;
    }
-
-
-   .txt h1,
    .txt .para {
-      width: 100%;
-   }
+      width: 95% !important;
+      font-size: 19px;
+      margin: auto 5px;
+      font-size: 18px !important;
+   } 
    .download-and-what-wrap a {
       display: block;
    }
 
+   .content-image {
+      width: 150px;
+   }
    .content-text-wrap {
       width: 100%;
    }
    .content-image-wrap {
       grid-template-columns: 1fr 1fr;
    }
-   .smart-meeting,
+   .smart-meeting {
+      width: 98%;
+   }
    .send-messages {
       width: 100%;
+      font-size: 18px;
+   }
+
+   .content-wrap h1 {
+      margin: auto 10px;
+      font-size: 2.2rem;
+   }
+   .content-wrap p {
+      width: 100%;
+      margin: auto 5px;
+      font-size: 20px;
+   }
+   .content-wrap a {
+      margin-bottom: 20px;
+   }
+
+}
+
+@media screen and (max-width: 359px) {
+  
+   header a {
+      margin: 2rem auto;
+   }
+
+   .content-image {
+      width: 130px;
    }
 
    .footer-content-wrapper {
@@ -301,15 +325,5 @@ footer .number {
       background-repeat: no-repeat;
       background-size: cover;
    }
-   .content-wrap h1 {
-      margin: auto 10px;
-      font-size: 2.2rem;
-   }
-   .content-wrap p {
-      width: 100%;
-      margin: auto 10px;
-   }
-   .content-wrap a {
-      margin-bottom: 20px;
-   }
+  
 }
